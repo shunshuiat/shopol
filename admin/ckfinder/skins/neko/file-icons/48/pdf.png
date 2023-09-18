@@ -1,0 +1,30 @@
+low syncing OneDrive accounts for only specific organizations." enabled. Do not enable both policies at the same time.</string>
+
+    <!-- SharePoint Server 2019 settings -->
+    <string id="SharePointOnPremFrontDoorUrl">Specify SharePoint Server URL and organization name</string>
+    <string id="SharePointOnPremFrontDoorUrl_help">This setting lets you enable users to use the OneDrive sync app (OneDrive.exe) to sync files in SharePoint Server 2019. The URL defines the location of the SharePoint Server and enables the sync app to authenticate and set up sync. The organization name lets you specify the OneDrive and SharePoint folder names that will be created in File Explorer. The organization name is optional. If you don't provide it, the sync app will use the first segment of the URL as the name. For example, office.sharepoint.com would become "Office," and the OneDrive folder name would be "OneDrive - Office."
+
+If you enable this setting and provide the SharePoint Server URL, users will be able to sync files in SharePoint Server 2019.
+
+If you disable or do not configure this setting, or do not provide the SharePoint Server URL, users will not be able to sync files in SharePoint Server 2019. </string>
+
+    <string id="SharePointOnPremPrioritization">Specify the OneDrive location in a hybrid environment</string>
+    <string id="SharePointOnPremPrioritization_help">This setting defines whether the OneDrive sync app (OneDrive.exe) should authenticate against SharePoint Online or SharePoint Server 2019 if the identity exists in both identity providers. To use this setting, you must also enable "Specify SharePoint Server URL and organization name". This setting affects only OneDrive for Business sync functionality. It does not impact syncing team sites in SharePoint Online or SharePoint Server 2019.
+
+If you enable this setting, you can select one of two options:
+
+SharePoint Online: The sync app will look first in SharePoint Online for a user's OneDrive. If the sync app is already configured with SharePoint Online for the user, it will attempt to configure a OneDrive for Business instance in SharePoint Server 2019 for that user.
+
+SharePoint Server 2019: The sync app will look first in SharePoint Server 2019 for a user's OneDrive for Business. If the sync app is already configured with SharePoint Server 2019 for the user, it will attempt to configure a OneDrive instance in SharePoint Online for that user.
+
+If you disable or do not configure this setting, the sync app will look first in SharePoint Online for the user's OneDrive.</string>
+    <string id="PrioritizeSPO">SharePoint Online</string>
+    <string id="PrioritizeSharePointOnPrem">SharePoint Server 2019</string>
+
+    <!-- Disable tutorial in the FRE -->
+    <string id="DisableFRETutorial">Disable the tutorial that appears at the end of OneDrive Setup</string>
+    <string id="DisableFRETutorial_help">This setting lets you prevent the tutorial from launching in a web browser at the end of OneDrive Setup.
+
+If you enable this setting, users will not see the tutorial after they complete OneDrive Setup.
+
+If you disable or do not configure this setting, the tutorial will appear at the end of OneD

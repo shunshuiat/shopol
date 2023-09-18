@@ -1,0 +1,45 @@
+ id="DisableNewAccountDetection">Disable a toast and activity center message to encourage a user to sign in OneDrive using an existing credential that is made available to Microsoft applications</string>
+        <string id="DisableNewAccountDetection_help">
+            If admins enable this setting (value 1), the user won't see the toast and the activity center message about new accounts that can be used to sign-in with OneDrive.
+
+            If admins disable (value 0) or do not configure this setting, the user will see the toast and the activity center message when OneDrive detects a new account on the device.
+        </string>
+        
+    </stringTable>
+    <presentationTable>
+      <presentation id="GPOSetUpdateRing_Pres">
+        <dropdownList refId="GPOSetUpdateRing_Dropdown" noSort="true" defaultItem="0">Update ring:</dropdownList>
+      </presentation>
+
+      <presentation id="AutomaticUploadBandwidthPercentage_Pres">
+        <text>Select the maximum percentage of bandwidth to take up when uploading files.</text>
+        <text>Valid values are from 10 - 99.</text>
+        <decimalTextBox refId="BandwidthSpinBox" defaultValue="70" spinStep="1">Bandwidth:</decimalTextBox>
+      </presentation>
+
+      <presentation id="UploadBandwidthLimit_Pres">
+        <text>Select the maximum amount of bandwidth to take up when uploading files.</text>
+        <text>Valid values are from 1 to 100000.</text>
+        <decimalTextBox refId="UploadRateValue" defaultValue="125">Bandwidth:</decimalTextBox>
+      </presentation>
+
+      <presentation id="DownloadBandwidthLimit_Pres">
+        <text>Select the maximum amount of bandwidth to take up when downloading files.</text>
+        <text>Valid values are from 1 to 100000.</text>
+        <decimalTextBox refId="DownloadRateValue" defaultValue="125">Bandwidth:</decimalTextBox>
+      </presentation>
+
+       <presentation id="DiskSpaceCheckThresholdMB_Pres">
+        <text>Specify the tenant ID and the maximum size of a user's OneDrive before the user is prompted to choose the folders they want to sync. </text>
+        <text>In the Value name field, enter the tenant ID. In the Value field, enter the size.</text>
+        <text>Valid values are from 0 to 4294967295 MB (inclusive).</text>
+        <listBox refId="DiskSpaceCheckThresholdMBList">Max size: </listBox>
+      </presentation>
+
+      <presentation id="DefaultRootDir_Pres">
+       <text>Specify the tenant ID and default path. </text>
+        <text>In the Value name field, enter the tenant ID. In the Value field, enter the path.</text>
+        <listBox refId="DefaultRootDirList">Path: </listBox>
+      </presentation>
+
+      <presentation id="DisableCustomRoot_Pres"

@@ -1,0 +1,36 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 200px 530px;
+    background-color: orange;
+}
+.user {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    background-color: orange;
+}
+.pass {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    background-color: white;
+}
+p {
+    padding: 5px;
+}
+button[type="submit"] {
+    padding: 5px;
+    margin: 10px;
+}
+input[type="text"],
+input[type="password"] {
+    padding: 5px;
+    background-color: white;
+}
